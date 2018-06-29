@@ -1,0 +1,17 @@
+
+#element{
+    font-family: "Noto Sans", Serif;
+}
+
+#container{
+    display: flex;
+}
+
+#container div {
+    width: 5%;
+    text-align: center;
+}
+
+.title{
+    background: lightcoral;
+}
