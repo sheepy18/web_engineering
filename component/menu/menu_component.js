@@ -12,7 +12,8 @@
             titles: ['Title1','Title2'],
             contents: ['content1','content2'],
             contentID: 'content-1',
-            css: 'menu_style.css'
+            css: 'menu_style.css',
+            color_selected: 'red'
 
         },
 
@@ -34,6 +35,8 @@
                             self.contents[ child.getAttribute('num') - 1] = child.innerHTML;
                         } else if( child.tagName && child.tagName ==='CONTENTID') {
                             self.contentID = child.innerHTML;
+                        } else if( child.tagName && child.tagName === 'SELECTED') {
+                            self.color_selected = child.getAttribute('color');
                         }
                 });
 
@@ -61,10 +64,23 @@
 
         self.titles.forEach( (t,i) => {
             let newDiv = document.createElement('div');
-            newDiv.addEventListener('click',() => { contentDiv.innerHTML = self.contents[i]; });
+            newDiv.addEventListener('click',() => {
+                contentDiv.innerHTML = self.contents[i];
+
+                [...self.element.querySelectorAll('.title')].forEach(
+                    (item) => {  item.style.backgroundColor = null; }
+                );
+
+                newDiv.style.backgroundColor = self.color_selected ;
+            });
             newDiv.innerHTML = t;
             newDiv.setAttribute('class', 'title');
+
+            if(i ===0)
+                newDiv.style.backgroundColor = self.color_selected ;
+
             self.element.querySelector('#container').appendChild( newDiv );
+
 
         });
 
