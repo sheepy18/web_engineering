@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="menu/menu_component.js"></script>
+    <script src="generator/gen_component.js"></script>
+    <style>
+        body{
+            font-size: 1.2em;
+        }
+        #content-1{
+            display: flex;
+        }
+
+    </style>
+</head>
+<body>
+<div id="website_socket">
+    <ccm-menu css ="menu/menu_style.css">
+        <item title="Wissen">Hello 1</item>
+        <item title="WE">Hello 2</item>
+        <item title="ParProg">Hello 3</item>
+
+        <contentID>content-1</contentID>
+
+        <container num="1" >
+            <ccm-menu css="menu/sideMenu.css">
+                <item title="Books"> Quam vulputate dignissim suspendisse in est ante in nibh mauris. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Convallis aenean et tortor at risus. Iaculis nunc sed augue lacus. Laoreet id donec ultrices tincidunt arcu non sodales neque sodales. Massa sed elementum tempus egestas. Aenean euismod elementum nisi quis eleifend quam. Suscipit tellus mauris a diam. Velit ut tortor pretium viverra suspendisse potenti nullam. Quis varius quam quisque id diam. In arcu cursus euismod quis viverra nibh cras.</item>
+                <item title="Links"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam id leo in vitae turpis. Amet luctus venenatis lectus magna fringilla. Aenean sed adipiscing diam donec adipiscing tristique risus nec. Nec tincidunt praesent semper feugiat nibh sed pulvinar. Quis blandit turpis cursus in hac habitasse platea. Elementum nibh tellus molestie nunc non blandit. Morbi tincidunt augue interdum velit euismod in pellentesque massa. Elit pellentesque habitant morbi tristique senectus et netus et malesuada. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget.
+
+                    Quam vulputate dignissim suspendisse in est ante in nibh mauris. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Convallis aenean et tortor at risus. Iaculis nunc sed augue lacus. Laoreet id donec ultrices tincidunt arcu non sodales neque sodales. Massa sed elementum tempus egestas. Aenean euismod elementum nisi quis eleifend quam. Suscipit tellus mauris a diam. Velit ut tortor pretium viverra suspendisse potenti nullam. Quis varius quam quisque id diam. In arcu cursus euismod quis viverra nibh cras.
+
+                    Sed tempus urna et pharetra pharetra massa massa ultricies. Viverra orci sagittis eu volutpat odio. Velit ut tortor pretium viverra suspendisse potenti nullam. Vitae aliquet nec ullamcorper sit amet risus nullam eget felis. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis. Viverra ipsum nunc aliquet bibendum enim facilisis gravida. At volutpat diam ut venenatis tellus in. Molestie a iaculis at erat. Sapien et ligula ullamcorper malesuada proin libero. Facilisi cras fermentum odio eu feugiat pretium nibh. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Nunc sed blandit libero volutpat sed. Ultricies leo integer malesuada nunc vel. Tempus egestas sed sed risus pretium. Quisque id diam vel quam elementum pulvinar etiam non. Risus at ultrices mi tempus imperdiet nulla. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque.</item>
+                <item title="Youtube"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam id leo in vitae turpis. Amet luctus venenatis lectus magna fringilla. Aenean sed adipiscing diam donec adipiscing tristique risus nec. Nec tincidunt praesent semper feugiat nibh sed pulvinar. Quis blandit turpis cursus in hac habitasse platea. Elementum nibh tellus molestie nunc non blandit. Morbi tincidunt augue interdum velit euismod in pellentesque massa. Elit pellentesque habitant morbi tristique senectus et netus et malesuada. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget.</item>
+
+                <contentID>content-2</contentID>
+
+            </ccm-menu>
+            <div id="content-2">
+            </div>
+        </container>
+
+        <container num="2" >
+            <ccm-menu css="menu/sideMenu.css">
+                <item title="Generators"></item>
+                <item title="Gen 2"></item>
+
+                <container num="1">
+                    <table id="shownums">
+                        <tr>
+                            <td> Row </td>
+                            <td> Even  </td>
+                            <td> Square  </td>
+                            <td> Prime  </td>
+                        </tr>
+                    </table>
+
+                    <ccm-generator>
+                        <tableID id="shownums"></tableID>
+                    </ccm-generator>
+                </container>
+
+                <container num="2">
+                    <table id="t2">
+
+                    </table>
+                    <ccm-generator>
+                        <tableID id="t2"></tableID>
+                    </ccm-generator>
+                </container>
+
+                <contentID>content-3</contentID>
+
+            </ccm-menu>
+            <div id="content-3">
+            </div>
+        </container>
+
+        <container num="3" >
+            <ccm-menu css="menu/sideMenu.css">
+
+                <item title="Other"> Sheepy </item>
+
+                <contentID>content-4</contentID>
+            </ccm-menu>
+            <div id="content-4">
+            </div>
+        </container>
+    </ccm-menu>
+
+    <div id="content-1">
+    </div>
+</div>
+</body>
+</html>
