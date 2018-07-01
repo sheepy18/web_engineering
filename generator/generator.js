@@ -66,7 +66,7 @@ function print( generator, date ) {
     if( sec > 0)
         generator.next(); //Ausgabe
 
-    setTimeout(() => { print( genPrint, newDate ); },1000);
+    setTimeout(() => { print( generator, newDate ); },1000);
 }
 
 /* Usage:

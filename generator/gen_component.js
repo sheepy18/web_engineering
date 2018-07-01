@@ -7,7 +7,7 @@
         },
 
         config: {
-            tableID: 'shownum'
+            tableID: '%tableID%'
         },
         
         
@@ -18,12 +18,38 @@
 
                     ccm.load( './generator.js' );
 
+                    if( self.inner ) {
+                        [...self.inner.children].forEach( child => {
+                            if( child.tagName && child.tagName === 'TABLEID') {
+                                self.tableID = child.getAttribute('id');
+                            }
+                        });
+                    }
+
+
                     callback();
                 };
 
                 self.start = callback => {
 
+                    let genPrim = genPrimNum( 2 ) ;
+                    let genSquare = genSquareNum( 0 );
+                    let genEven = genEvenNumber( 0 );
 
+                    let collectedPrimNums = [];
+                    let collectedSquareNums = [];
+                    let collectedEvenNums =  [];
+
+                    let genPrint = genPrintNums(document.getElementById( self.tableID ) , collectedEvenNums, collectedSquareNums, collectedPrimNums);
+
+
+                    requestAnimationFrame(() => {
+                        exec( genPrim, collectedPrimNums );
+                        exec( genSquare, collectedSquareNums );
+                        exec( genEven, collectedEvenNums );
+                    } );
+
+                    print( genPrint, new Date() );
 
                     callback && callback();
                 };
