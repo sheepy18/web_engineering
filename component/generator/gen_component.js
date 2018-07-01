@@ -24,7 +24,7 @@
                         });
                     }
 
-                    ccm.load( 'generator/generator.js' ,() => { callback(); });
+                    ccm.load( 'component/generator/generator.js' ,() => { callback(); });
                 };
 
                 self.start = callback => {
