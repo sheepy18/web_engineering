@@ -7,6 +7,7 @@
 #container{
     display: flex;
     font-size: 2em;
+    width: 100%;
 }
 
 #container div {
@@ -14,8 +15,13 @@
     text-align: center;
     border: 1px solid black;
     border-radius: 0.5em 0.5em 0 0;
+    cursor: pointer;
 }
 
 .title{
-    background: lightcoral;
+    background: #474B4F;
+}
+
+.title:hover{
+    background: #61892F;
 }

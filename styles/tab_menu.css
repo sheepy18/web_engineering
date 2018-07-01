@@ -1,0 +1,25 @@
+
+#element{
+    font-family: "Noto Sans",Serif;
+}
+
+#container{
+    display: flex;
+    font-size: 1.4em;
+}
+
+#container div{
+    border: 1px solid black;
+    width: 33%;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+#container div :hover{
+    background: darkgrey;
+}
+
+.title:hover{
+    background: grey;
+}

@@ -13,8 +13,14 @@
 #container div {
     text-align: center;
     border: 1px solid black;
+    cursor: pointer;
+    width: 8em;
 }
 
 .title{
-    background: lightblue;
+    background: #6B6E70;
+}
+
+.title:hover{
+    background: #86C232;
 }

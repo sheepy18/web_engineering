@@ -8,6 +8,9 @@
     <style>
         body{
             font-size: 1.2em;
+            font-family: "Noto Sans",Serif;
+            background: #222629;
+            color: white;
         }
         #content-1{
             display: flex;
@@ -44,7 +47,6 @@
         <container num="2" >
             <ccm-menu css="styles/sideMenu.css">
                 <item title="Generators"></item>
-                <item title="Gen 2"></item>
 
                 <container num="1">
                     <table id="shownums">
@@ -61,15 +63,6 @@
                     </ccm-generator>
                 </container>
 
-                <container num="2">
-                    <table id="t2">
-
-                    </table>
-                    <ccm-generator>
-                        <tableID id="t2"></tableID>
-                    </ccm-generator>
-                </container>
-
                 <contentID>content-3</contentID>
 
             </ccm-menu>
@@ -81,6 +74,28 @@
             <ccm-menu css="styles/sideMenu.css">
 
                 <item title="Other"> Sheepy </item>
+
+
+                <container num="1">
+                    <ccm-menu  css="styles/tab_menu.css">
+                        <item title="Lorem 1"> Lorem 1 </item>
+                        <item title ="Lorem 2"> Lorem 2 </item>
+                        <item title="Lorem 3"> Lorem 3 </item>
+
+                        <container num="1">
+                            Quam vulputate dignissim suspendisse in est ante in nibh mauris. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Convallis aenean et tortor at risus. Iaculis nunc sed augue lacus. Laoreet id donec ultrices tincidunt arcu non sodales neque sodales. Massa sed elementum tempus egestas. Aenean euismod elementum nisi quis eleifend quam. Suscipit tellus mauris a diam. Velit ut tortor pretium viverra suspendisse potenti nullam. Quis varius quam quisque id diam. In arcu cursus euismod quis viverra nibh cras.
+                        </container>
+                        <container num="2">
+                            Sed tempus urna et pharetra pharetra massa massa ultricies. Viverra orci sagittis eu volutpat odio. Velit ut tortor pretium viverra suspendisse potenti nullam. Vitae aliquet nec ullamcorper sit amet risus nullam eget felis. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis. Viverra ipsum nunc aliquet bibendum enim facilisis gravida. At volutpat diam ut venenatis tellus in. Molestie a iaculis at erat. Sapien et ligula ullamcorper malesuada proin libero. Facilisi cras fermentum odio eu feugiat pretium nibh. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Nunc sed blandit libero volutpat sed. Ultricies leo integer malesuada nunc vel. Tempus egestas sed sed risus pretium. Quisque id diam vel quam elementum pulvinar etiam non. Risus at ultrices mi tempus imperdiet nulla. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque.</item>
+                        </container>
+                        <container num="3">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.
+                        </container>
+                        <contentID>content-5</contentID>
+                    </ccm-menu>
+                     <div id="content-5">
+                     </div>
+                </container>
 
                 <contentID>content-4</contentID>
             </ccm-menu>
