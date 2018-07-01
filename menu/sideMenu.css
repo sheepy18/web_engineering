@@ -1,21 +1,20 @@
 
+
 #element{
     font-family: "Noto Sans", Serif;
-
 }
 
 #container{
     display: flex;
-    font-size: 2em;
+    flex-direction: column;
+    font-size: 1.4em;
 }
 
 #container div {
-    width: 33%;
     text-align: center;
     border: 1px solid black;
-    border-radius: 0.5em 0.5em 0 0;
 }
 
 .title{
-    background: lightcoral;
+    background: lightblue;
 }
