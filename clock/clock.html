@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="clocky">
+    <svg id="clock" viewBox="0 0 100 100" height="300px" width="300px">
+        <g id="clockArea" transform="translate(50,50)">
+            <circle  r="48" stroke-width="0.5" stroke="black" fill="white"/>
+            <circle   r="1" fill="black"/>
+            <line id="hourHand"  y1="0" y2="20" stroke="black" stroke-width="1" fill="black"/>
+            <line id="minHand" y1="0" y2="30" stroke="black" stroke-width="0.4" fill="black"/>
+            <line id="secHand"  y1="0" y2="40" stroke="black" stroke-width="0.2" fill="black"/>
+        </g>
+    </svg>
+</div>
+    <script src="clock.js"></script>
+</body>
+</html>
